@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Котики</a></li>
+                <li><a href="#" onclick="showSection('bella')">Белла</a></li>
+                <li><a href="#" onclick="showSection('alisa')">Аліса</a></li>
+                <li><a href="#" onclick="showSection('yasyk')">Ясик</a></li>
+                <li><a href="#" onclick="showSection('miya')">Мія</a></li>
+                <li><a href="#" onclick="showSection('yasykasya')">Ясик та ася </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Головна сторінка (Котики) -->
+    <section id="home" class="section-content">
+        <h1>Котики</h1>
+        <img src="cat1.jpg" alt="Котики" class="cat-image">
+        <p>Котики — це чудові домашні улюбленці, які приносять радість і тепло в будь-яку домівку. Вони мають різноманітні характери і завжди готові зробити ваш день кращим!</p>
+    </section>
+
+    <!-- Секція Белла -->
+    <section id="bella" class="section-content" style="display:none;">
+        <h1>Белла</h1>
+        <img src="bella.jpg" alt="Белла" class="cat-image">
+        <p>Белла — красива кицька , в якої є дочка Мія.Белла полюбляє багато гуляти.</p>
+    </section>
+
+    <!-- Секція Аліса -->
+    <section id="alisa" class="section-content" style="display:none;">
+        <h1>Аліса</h1>
+        <img src="alisa.jpg" alt="Аліса" class="cat-image">
+        <p>Аліса — Завжди сидить вдома та пильнує будинок від непроханих гостей.</p>
+    </section>
+
+    <!-- Секція Ясик -->
+    <section id="yasyk" class="section-content" style="display:none;">
+        <h1>Ясик</h1>
+        <img src="yasyk.jpg" alt="Ясик" class="cat-image">
+        <p>Ясик —Вредний шо то капєц , нічо не любе тільки би спав і їв.</p>
+    </section>
+
+    <!-- Секція Мія -->
+    <section id="miya" class="section-content" style="display:none;">
+        <h1>Мія</h1>
+        <img src="miya.jpg" alt="Мія" class="cat-image">
+        <p>Мія — ну таке мале , дуже кусається то така мія маленя.</p>
+    </section>
+
+    <!-- Секція Ясик та Ася -->
+    <section id="yasykasya" class="section-content" style="display:none;">
+        <h1>Ясик та Ася </h1>
+        <img src="yasykmiya.jpg" alt="Ясик2" class="cat-image">
+        <p>Ясик та ася діти Аліси , всі будуть як мама , маленькі няшні котики.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Фан-клуб котиків</p>
+    </footer>
+
+    <script>
+        // Функція для відображення відповідної секції
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section-content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFE4E1; /* Світло-рожевий фон */
+    color: #333; /* Темний текст для контрасту */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFB6C1; /* Світло-рожевий колір для заголовку */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Золотий колір при наведенні */
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #FF69B4; /* Яскраво-рожевий для заголовків */
+}
+
+.cat-image {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #FFB6C1;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
